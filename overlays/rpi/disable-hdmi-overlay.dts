@@ -2,19 +2,19 @@
 /plugin/;
 
 / {
-    compatible = \"brcm,bcm2835\", \"brcm,bcm2708\", \"brcm,bcm2709\", \"brcm,bcm2711\";
+    compatible = "brcm,bcm2835", "brcm,bcm2708", "brcm,bcm2709", "brcm,bcm2711";
 	
 	fragment@20 {
             target = <&hdmi0>;
             __overlay__  {
-                    status = \"disabled\";
+                    status = "disabled";
             };
     };
 
     fragment@21 {
             target = <&hdmi1>;
             __overlay__  {
-                    status = \"disabled\";
+                    status = "disabled";
             };
     };
 
