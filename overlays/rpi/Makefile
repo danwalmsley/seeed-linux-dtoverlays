@@ -9,7 +9,7 @@ DTBOS := $(patsubst %.dts, %.dtbo, $(wildcard *.dts))
 DT := $(patsubst %-overlay.dtbo, %, ${DTBOS})
 # $(warning DTBOS = $(DTBOS))
 
-DEST  := /boot/overlays
+DEST  := /boot/firmware
 SHELL := /bin/bash
 CPP   := gcc -E
 DTC   := dtc
